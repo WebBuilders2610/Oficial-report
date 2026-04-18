@@ -20,10 +20,12 @@ Ser una plataforma líder en el ámbito de la salud neonatal digital, reconocida
 
 ### 1.1.2 Perfiles de integrantes del equipo
 
+### 1.1.2 Perfiles de integrantes del equipo
+
 | Foto | Apellidos y Nombres | Código | Carrera | Acerca de |
 |------|---------------------|--------|---------|-----------|
 | ![yazid](assets/foto-yazid.jpeg) | Said Conde, Yazid | U202312348 | Ingeniería de Software | Me considero una persona responsable al trabajar en equipo, proactivo y dispuesto a asumir liderazgo en situaciones críticas. Me apasiona la programación, el desarrollo de software, videojuegos y la ciberseguridad en el área de Red Team. Tengo conocimientos en Python, SQL, C++ y desarrollo web. |
 | ![Angel](assets/foto-angel.jpeg) | Montoya Torres, Alexander Gabriel | u20231b424 | Ingeniería de Software | Soy estudiante de Ingeniería de Software en la UPC, tengo 20 años. Manejo lenguajes como C++, MySQL, Python, HTML y CSS. Me gusta dedicar esfuerzo a todo lo que hago, tanto en lo académico como en mis hobbies. Busco seguir desarrollando habilidades profesionales y personales. |
-![Alexander](assets/foto-alexander.jpeg) | Montoya Torres, Alexander Gabriel | u20231b424 | Ingeniería de Software | Soy estudiante de la carrera de Ingeniería de Software en la UPC, tengo 20 años actualmente. He aprendido lenguajes como C++, MySQL, Python, HTML y CSS. Me gusta dedicar esfuerzo a todo lo que hago, tanto académico como personal. Mi objetivo es seguir mejorando profesional y personalmente. |
 | ![Juan](assets/foto-juan.jpeg) | Flores Rios, Juan Diego | u202412124 | Ingeniería de Software | Estudiante del quinto ciclo de Ingeniería de Software en la UPC. Destaco por mis habilidades de liderazgo y coordinación de equipos. Tengo conocimientos en C++, HTML, CSS, JavaScript y desarrollo web. |
+| ![Alexander](assets/foto-alexander.jpeg) | Montoya Torres, Alexander Gabriel | u20231b424 | Ingeniería de Software | Soy estudiante de Ingeniería de Software en la UPC, tengo 20 años. Manejo lenguajes como C++, MySQL, Python, HTML y CSS. Me gusta dedicar esfuerzo a todo lo que hago, tanto en lo académico como en mis hobbies. Busco seguir desarrollando habilidades profesionales y personales. |
 | ![Mauricio](assets/foto-mauricio.jpeg) | Padilla Merino, Mauricio Jared | u201911393 | Ingeniería de Software | Estudiante del quinto ciclo de Ingeniería de Software. Me caracterizo por mi capacidad de planificación y estructuración de proyectos, manteniendo una comunicación efectiva y apertura al feedback para lograr un mejor trabajo en equipo. |
