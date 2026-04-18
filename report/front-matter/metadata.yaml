@@ -1,0 +1,85 @@
+---
+toc: true
+toc-depth: 3
+number-sections: true
+header-includes:
+  - \usepackage{graphicx}
+include-before: |
+  \begin{titlepage}
+  \centering
+  \includegraphics[width=0.4\textwidth]{./report/assets/upc-logo.png}
+  \vspace{2cm}
+  
+  {\small Carrera: Ingeniería de Software}
+  
+  {\small Periodo: 2026-10}
+  
+  {\small Curso: Aplicaciones Web}
+  
+  {\small NRC: 12258}
+  
+  {\small Profesor: Velasquez Nuñez, Angel Augusto}
+  
+  {\small Informe de Trabajo Final}
+  
+  {\small Startup: WebBuilders}
+  
+  {\small Producto: Siran}
+  
+  \vspace{1cm}
+  
+  {\small Miembros de grupo:}
+  
+  
+  {\small Crispin Valdivia, Angel Gabriel - U20221g181}
+
+  {\small Flores Rios, Juan Diego - }
+  
+  {\small Montoya Torres, Alexander Gabriel - U20231b424}
+  
+  {\small Padilla Merino, Mauricio Jared - }
+  
+  {\small Said Conde, Yazid - U202312348}
+  
+  \vspace{1cm}
+  
+  {\large marzo de 2026}
+  \end{titlepage}
+  
+  \newpage
+
+    \section*{Registro de Versiones}
+
+    \begin{tabular}{|c|p{4cm}|p{8cm}|}
+      \hline
+      Version & Autores & Descripcion\\
+      \hline
+      TB1 &
+      Crispin Valdivia, Angel Gabriel \par
+      Flores Rios, Juan Diego \par
+      Montoya Torres, Alexander Gabriel \par
+      Padilla Merino, Mauricio Jared \par
+      Said Conde, Yazid &
+      - Capítulo I: Introducción \par
+      - Capítulo II: Requirements Elicitation \par
+      - Capítulo III: Requirements Specification \par
+      - Capítulo IV: Product Design \par
+      - Capítulo V: Implementation sprint 1 \par
+      - Conclusiones
+      - Recomendaciones
+      \\
+      \hline
+    \end{tabular}
+
+  \newpage
+  
+  \newpage
+  
+    \section*{Project Report Collaboration Insights}
+  
+    \large A continuación, capturas del procesos, commits y elaboración de nuestro proyecto en cada entrega.
+
+    \large Entrega Nº1: TB1
+  
+  \newpage
+---
