@@ -4,28 +4,25 @@
 
 ### 1.1.1 Descripción de la Startup
 
-SIRAN es una startup dedicada a mejorar la calidad de vida de los recién nacidos y sus familias mediante soluciones tecnológicas innovadoras, accesibles y centradas en la salud. Actualmente, tras identificar los desafíos críticos en el monitoreo y cuidado de bebés recién nacidos, hemos desarrollado SIRAN: una solución web que conecta a padres y profesionales de la salud con información confiable y en tiempo real.
+<p align = "justify">SIRAN es una startup dedicada a mejorar la calidad de vida de los recién nacidos y sus familias mediante soluciones tecnológicas innovadoras, accesibles y centradas en la salud. Actualmente, tras identificar los desafíos críticos en el monitoreo y cuidado de bebés recién nacidos, hemos desarrollado SIRAN: una solución web que conecta a padres y profesionales de la salud con información confiable y en tiempo real.</p>
 
-A través del registro y análisis de datos del bebé, la plataforma permite a los especialistas realizar un seguimiento continuo, detectar posibles riesgos y brindar recomendaciones personalizadas. Asimismo, los padres podrán visualizar el progreso y estado de salud de sus hijos de forma clara y sencilla, fortaleciendo la prevención y el cuidado oportuno.
+
+<p align = "justify">A través del registro y análisis de datos del bebé, la plataforma permite a los especialistas realizar un seguimiento continuo, detectar posibles riesgos y brindar recomendaciones personalizadas. Asimismo, los padres podrán visualizar el progreso y estado de salud de sus hijos de forma clara y sencilla, fortaleciendo la prevención y el cuidado oportuno.</p>
 
 **Misión:**
 
-Desarrollar tecnología innovadora y accesible que contribuya al bienestar de los recién nacidos, facilitando el monitoreo de su salud y fortaleciendo la conexión entre padres y profesionales médicos, con el fin de mejorar la calidad de vida desde las primeras etapas de desarrollo.
+<p align = "justify">Desarrollar tecnología innovadora y accesible que contribuya al bienestar de los recién nacidos, facilitando el monitoreo de su salud y fortaleciendo la conexión entre padres y profesionales médicos, con el fin de mejorar la calidad de vida desde las primeras etapas de desarrollo.</p>
 
 **Visión:**
 
-Ser una plataforma líder en el ámbito de la salud neonatal digital, reconocida por ofrecer soluciones tecnológicas eficientes, confiables y humanas, que impacten positivamente en el cuidado infantil a nivel nacional e internacional.
-
-### 1.1.2 Perfiles de integrantes del equipo
-
-### 1.1.2 Perfiles de integrantes del equipo
+<p align = "justify">Ser una plataforma líder en el ámbito de la salud neonatal digital, reconocida por ofrecer soluciones tecnológicas eficientes, confiables y humanas, que impacten positivamente en el cuidado infantil a nivel nacional e internacional.</p>
 
 ### 1.1.2 Perfiles de integrantes del equipo
 
 | Foto | Apellidos y Nombres | Código | Carrera | Acerca de |
 |------|---------------------|--------|---------|-----------|
-| ![yazid](assets/foto-yazid.jpeg) | Said Conde, Yazid | U202312348 | Ingeniería de Software | Me considero una persona responsable al trabajar en equipo, proactivo y dispuesto a asumir liderazgo en situaciones críticas. Me apasiona la programación, el desarrollo de software, videojuegos y la ciberseguridad en el área de Red Team. Tengo conocimientos en Python, SQL, C++ y desarrollo web. |
-| ![Angel](assets/foto-angel.jpeg) | Montoya Torres, Alexander Gabriel | u20231b424 | Ingeniería de Software | Soy estudiante de Ingeniería de Software en la UPC, tengo 20 años. Manejo lenguajes como C++, MySQL, Python, HTML y CSS. Me gusta dedicar esfuerzo a todo lo que hago, tanto en lo académico como en mis hobbies. Busco seguir desarrollando habilidades profesionales y personales. |
-| ![Juan](assets/foto-juan.jpeg) | Flores Rios, Juan Diego | u202412124 | Ingeniería de Software | Estudiante del quinto ciclo de Ingeniería de Software en la UPC. Destaco por mis habilidades de liderazgo y coordinación de equipos. Tengo conocimientos en C++, HTML, CSS, JavaScript y desarrollo web. |
-| ![Alexander](assets/foto-alexander.jpeg) | Montoya Torres, Alexander Gabriel | u20231b424 | Ingeniería de Software | Soy estudiante de Ingeniería de Software en la UPC, tengo 20 años. Manejo lenguajes como C++, MySQL, Python, HTML y CSS. Me gusta dedicar esfuerzo a todo lo que hago, tanto en lo académico como en mis hobbies. Busco seguir desarrollando habilidades profesionales y personales. |
-| ![Mauricio](assets/foto-mauricio.jpeg) | Padilla Merino, Mauricio Jared | u201911393 | Ingeniería de Software | Estudiante del quinto ciclo de Ingeniería de Software. Me caracterizo por mi capacidad de planificación y estructuración de proyectos, manteniendo una comunicación efectiva y apertura al feedback para lograr un mejor trabajo en equipo. |
+| ![yazid](assets/foto-yazid.jpeg) | Said Conde, Yazid | U202312348 | Ingeniería de Software | <p align = "justify">Me considero una persona responsable al trabajar en equipo, proactivo y dispuesto a asumir liderazgo en situaciones críticas. Me apasiona la programación, el desarrollo de software, videojuegos y la ciberseguridad en el área de Red Team. Tengo conocimientos en Python, SQL, C++ y desarrollo web.</p> |
+| ![Angel](assets/foto-angel.jpeg) | Montoya Torres, Alexander Gabriel | u20231b424 | Ingeniería de Software | <p align = "justify">Soy estudiante de Ingeniería de Software en la UPC, tengo 20 años. Manejo lenguajes como C++, MySQL, Python, HTML y CSS. Me gusta dedicar esfuerzo a todo lo que hago, tanto en lo académico como en mis hobbies. Busco seguir desarrollando habilidades profesionales y personales.</p> |
+| ![Juan](assets/foto-juan.jpeg) | Flores Rios, Juan Diego | u202412124 | Ingeniería de Software | <p align = "justify">Estudiante del quinto ciclo de Ingeniería de Software en la UPC. Destaco por mis habilidades de liderazgo y coordinación de equipos. Tengo conocimientos en C++, HTML, CSS, JavaScript y desarrollo web.</p> |
+| ![Alexander](assets/foto-alexander.jpeg) | Montoya Torres, Alexander Gabriel | u20231b424 | Ingeniería de Software | <p align = "justify">Soy estudiante de Ingeniería de Software en la UPC, tengo 20 años. Manejo lenguajes como C++, MySQL, Python, HTML y CSS. Me gusta dedicar esfuerzo a todo lo que hago, tanto en lo académico como en mis hobbies. Busco seguir desarrollando habilidades profesionales y personales.</p> |
+| ![Mauricio](assets/foto-mauricio.jpeg) | Padilla Merino, Mauricio Jared | u201911393 | Ingeniería de Software | <p align = "justify">Estudiante del quinto ciclo de Ingeniería de Software. Me caracterizo por mi capacidad de planificación y estructuración de proyectos, manteniendo una comunicación efectiva y apertura al feedback para lograr un mejor trabajo en equipo.</p> |
