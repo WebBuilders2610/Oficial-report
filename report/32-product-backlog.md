@@ -22,5 +22,5 @@ El siguiente Product Backlog presenta la priorización de las User Stories del s
 | 16     | HU16          | Cerrar sesión                    | Como usuario, quiero cerrar sesión para proteger cuenta.                              | 1                                |
 
 <img src="assets/Chapter-3/Product-Backlog.png" width="480" height="720">
-Link de Trello: 
-[https://trello.com/invite/b/69ea2e9d8dcbf9a288252eda/ATTI72d9bb3d41ddaf2e8dc030956dac273f59A009D8/apps-web-product-backlog](https://trello.com/invite/b/69ea2e9d8dcbf9a288252eda/ATTI72d9bb3d41ddaf2e8dc030956dac273f59A009D8/apps-web-product-backlog)
+
+Link de Trello: https://trello.com/invite/b/69ea2e9d8dcbf9a288252eda/ATTI72d9bb3d41ddaf2e8dc030956dac273f59A009D8/apps-web-product-backlog
