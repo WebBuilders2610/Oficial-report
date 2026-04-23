@@ -53,8 +53,6 @@ Se creó un repositorio para la Landing Page del sistema:
 - URL del repositorio:  
 https://github.com/WebBuilders2610/LandingPageOficial
 
-*(Reemplazar con el enlace real)*
-
 ---
 
 ### Estrategia de ramas
