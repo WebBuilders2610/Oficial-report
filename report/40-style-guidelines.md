@@ -1,4 +1,4 @@
-[# Chapter IV: Product Design
+# Chapter IV: Product Design
 
 ## 4.1. Style Guidelines
 
@@ -6,13 +6,13 @@
 
 __Branding:__
 
-Para el logotipo de SIRAN, se ha optado por un diseño protector y clínico que refleja la seguridad de la aplicación. El logotipo se compone de una tipografía sólida y moderna, acompañada de un icono que simboliza el cuidado neonatal y el monitoreo constante, así como un escudo de protección. Los colores utilizados son tonos azules y celestes, lo que refuerza la idea de confianza, salud y tranquilidad.
+Para el imagotipo de SIRAN, se ha optado por un diseño protector y clínico que refleja la seguridad de la aplicación. Este se compone de una tipografía sólida y moderna, acompañada de un icono que simboliza el cuidado neonatal y el monitoreo constante, así como un escudo de protección. Los colores utilizados son tonos azules y celestes, lo que refuerza la idea de confianza, salud y tranquilidad.
 
 ![logo SIRAN](assets/Chapter-4/logo.png)
 
 __Tipografía:__
 
-La tipografía de nuestra aplicación será fácilmente legible y estética, por lo que se hará uso de la fuente Poppins para los botones y títulos. Para los textos haremos uso de Roboto, con interlineado de 1,15 con el tamaño base de 18px en la página web, además para la versión móvil el tamaño de letra será 16px.
+La tipografía de nuestra aplicación será fácilmente legible y estética, por lo que se hará uso de la fuente **Poppins** para los botones y títulos. Para los textos haremos uso de la fuente **Roboto**, con interlineado de 1,15 con el tamaño base de 18px en la página web, además para la versión móvil el tamaño de letra será 16px.
 
 __Pesos:__
 
@@ -30,13 +30,26 @@ Text (9px, Blanco)
 
 __Colors:__
 
-Nuestra plataforma, al estar dirigida a centros de salud y atención neonatal, utiliza una paleta cromática que transmite confianza, cuidado y profesionalismo: el #E3EDFF (azul lavanda pálido) aporta calma y cercanía en testimonios, el #FFFFFF (blanco) representa limpieza y orden, el #F2F2F2 (blanco grisáceo) permite diferenciar secciones con sutileza, el #4A7FF0 (azul brillante) resalta elementos interactivos y fomenta la interacción, el #000000 (negro) asegura legibilidad y formalidad en los textos, el #C0EEE3 (cian pastel) transmite bienestar y armonía, y el #CDEBFF ( pastel celeste) refuerza la serenidad y la seguridad visual en la experiencia del usuario.
+- __#E3EDFF (Azul lavanda pálido):__ Aporta calma y cercanía; ideal para testimonios.
+
+- __#FFFFFF (Blanco):__ Representa limpieza, orden y claridad.
+
+- __#F2F2F2 (Blanco grisáceo):__ Permite diferenciar secciones con sutileza.
+
+- __#4A7FF0 (Azul brillante):__ Resalta elementos interactivos y fomenta la acción.
+
+- __#000000 (Negro):__ Asegura legibilidad y formalidad en los textos.
+
+- __#C0EEE3 (Cian pastel):__ Transmite bienestar y armonía.
+
+- __#CDEBFF (Celeste pastel):__ Refuerza la serenidad y la seguridad visual.
+
 
 ![colors](assets/Chapter-4/colors.png)
 
 __Spacing:__
 
-El diseño de Siran destaca por un espacio amplio y regular que sirve como eje organizador. Esta apuesta por el "aire" entre elementos mejora la claridad informativa y proyecta una imagen de orden y estabilidad, haciendo que la interacción del usuario sea mucho más cómoda.
+El diseño de Siran destaca por un espacio amplio y regular que sirve como eje organizador. Esta apuesta por el "aire" entre elementos mejora la claridad informativa y proyecta una imagen de orden y estabilidad, haciendo que la interacción del usuario sea mucho más cómoda
 
 Escala de Espaciado (Spacing System)
 4PX --- Micro-ajustes (iconos, etiquetas pequeñas).
@@ -60,13 +73,16 @@ __Tono de Comunicación y Lenguaje__
 
 Para SIRAN, las dimensiones de comunicación se sitúan en un punto de equilibrio entre la autoridad clínica y la empatía humana, adoptando las siguientes posturas:
 
-- Serio : El manejo de datos vitales de bebés exige un rigor absoluto. La comunicación debe transmitir precisión y responsabilidad.
+- __Serio :__ El manejo de datos vitales de bebés exige un rigor absoluto. La comunicación debe transmitir precisión y responsabilidad.
 
-- Formal: Se utiliza un lenguaje profesional que respete la relación médico-paciente y la institucionalidad de la clínica.
+- __Formal:__ Se utiliza un lenguaje profesional que respete la relación médico-paciente y la institucionalidad de la clínica.
 
-- Respetuoso: Se reconoce la vulnerabilidad y la preocupación de los padres y el personal médico ante una alerta.
+- __Respetuoso:__ Se reconoce la vulnerabilidad y la preocupación de los padres y el personal médico ante una alerta.
 
-- Sereno: En lugar de una energía vibrante, se busca una calma que inspira control y seguridad en momentos de tensión.
+- __Sereno:__ En lugar de una energía vibrante, se busca una calma que inspira control y seguridad en momentos de tensión.
+
+- __Adaptabilidad de Registro:__ Aunque la esencia de SIRAN es formal y serena, el lenguaje se adapta según el receptor: técnico y preciso para el personal médico (optimizando la toma de decisiones), y accesible y reconfortante para los padres (reduciendo la carga de estrés sin perder el rigor).
+
 
 __Sustento de Principios y Orientación del Servicio__
 
@@ -84,4 +100,4 @@ __3. Accesibilidad y Confiabilidad:__ El diseño se centra en la "consistencia" 
 
 Para SIRAN, hemos diseñado una plataforma web bajo un enfoque de Diseño Adaptable (Responsive Web Design), garantizando que el monitoreo clínico y la información de salud sean accesibles y perfectamente legibles desde cualquier dispositivo, ya sea una tablet en clínica o un smartphone para los padres.
 
-Como equipo, hemos optado por incorporar el patrón de diseño en forma de F en nuestro sitio web. Esta técnica es ideal para páginas con carga de contenido informativo y servicios clínicos, ya que emula el comportamiento natural de lectura. Ubicamos el logotipo en la esquina superior izquierda para establecer identidad inmediata, seguido de un menú de navegación horizontal que culmina en un botón de acción (CTA) destacado en la esquina superior derecha para facilitar la conversión inmediata.](https://github.com/WebBuilders2610/Oficial-report.git)
+Como equipo, hemos optado por incorporar el patrón de diseño en forma de F en nuestro sitio web. Esta técnica es ideal para páginas con carga de contenido informativo y servicios clínicos, ya que emula el comportamiento natural de lectura. Ubicamos el logotipo en la esquina superior izquierda para establecer identidad inmediata, seguido de un menú de navegación horizontal que culmina en un botón de acción (CTA) destacado en la esquina superior derecha para facilitar la conversión inmediata.
