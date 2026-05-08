@@ -57,7 +57,7 @@ Contiene información adicional como contactos, enlaces secundarios o derechos d
 
 <!--IMAGEN DEL FOOTER-->
 
-#### Landing Page para Desktop Web Browser
+### Landing Page para Desktop Web Browser
 
 __Header:__
 
@@ -108,3 +108,93 @@ Sección final con información complementaria, enlaces y año de creación. Su 
 <!--IMAGEN DEL FOOTER-->
 
 ### 4.3.2. Landing Page Mock-up.
+
+__Sección Encabezado:__
+
+Presenta un diseño limpio de fondo blanco, logotipo de SIRAN en tono azules ubicado en la parte izquierda del menú de navegación y en el derecha (Home, Beneficios, Testimonios y Planes), acompañado del botón destacado.
+
+<!--IMAGEN DE LA SECCION ENCABEZADO-->
+
+__Sección Principal:__
+
+Sección destacada con fondo grisáceo, un título principal en tipografía Poppins, texto descriptivos en tipografía Roboto y un botón en azul.. Se incluye una imagen representativa.
+
+<!--IMAGEN DE LA SECCION PRINCIPAL-->
+
+__Sección Beneficios:__
+
+Se organiza en columnas con tarjetas que contiene iconos, título y descripciones cortas, utilizando un fondo azul lavanda en las tarjetas y un fondo blanco principal.
+
+__Sección Testimonios:__
+
+Tarjetas con fondo celeste pastel que contiene opiniones de usuarios, nombres e imágenes.
+
+__Sección Precios y Planes:__
+
+Tarjetas alineadas horizontalmente que presentan los planes de suscripción, con precios, características y botones. Se puede destacar un plan con color diferente.
+
+<!--IMAGEN DE LA SECCION PRECIOS Y PLANES-->
+
+__Sección Capturas de Pantalla:__
+
+Presentación visuales de nuestra aplicación con diferentes usuarios como los pediatras o padres.
+
+<!--IMAGEN DE LA SECCION CAPTURAS DE PANTALLA-->
+
+__Sección de Desarrolladores:__
+
+Se muestran a los encargados de haber desarrollado la 	aplicación.
+
+<!--IMAGEN DE LA SECCION DE DESARROLLADORES-->
+
+__Sección Footer:__
+
+Sección final con fondo blanco y celeste pastel, que incluye información adicional, enlaces y derechos de autor. Además de presentar enlaces a instagram y facebook.
+
+<!--IMAGEN DEL FOOTER-->
+
+### Landing Page para Mobile Web Browser
+
+__Sección Encabezado:__
+
+Presenta un diseño de fondo blanco, el logotipo de SIRAN alineado al centro, un menú de hamburguesa alineado al lado izquierdo y por último un botón interactivo.
+
+<!--IMAGEN DE LA SECCION ENCABEZADO-->
+
+__Sección Principal:__
+
+Se presenta en formato vertical con fondo en tonos grisáceos , un título destacado, texto breve y un botón CTA en azul.
+
+<!--IMAGEN DE LA SECCION PRINCIPAL-->
+
+__Sección Beneficios:__
+
+Organizada en tarjetas verticales con fondo blanco, cada una con icono, título y breve descripción.
+
+__Sección Testimonios:__
+
+Tarjetas verticales con fondo celeste pastel, que contienen opiniones de usuarios con texto breve.
+
+<!--IMAGEN DE LA SECCION TESTIMONIOS-->
+
+__Sección Planes:__
+
+Tarjetas organizadas verticalmente con información de precios, características y botones de color azul brillante destacados. Ademas de que destaca la tarjeta del centro con un fondo de color cian pastel.
+
+<!--IMAGEN DE LA SECCION PLANES-->
+
+__Sección Capturas de Pantalla:__
+
+Sección que evidencia el uso de nuestra aplicación y como los usuarios como pediatras o padres lo usan.
+
+__Sección Desarrolladores:__
+
+Se presenta mediante tarjetas con fondo blacno, donde se muestran los integrantes del equipo, incluyendo foto , nombre. Se mantiene el uso de colores suaves alineados a la identidad visual.
+
+<!--IMAGEN DE LA SECCION DESARROLLADORES-->
+
+__Sección Footer:__
+
+Presenta un diseño estructurado con fondo blacno y celeste pastel permitiendo diferenciarse del resto de secciones. Se organiza en bloques verticales , incluyendo enlaces de navegación y datos de contacto. Puede incorporar el logotipo en menor tamaño, acompañado de textos secundarios y enlaces útiles.
+
+<!--IMAGEN DEL FOOTER-->
