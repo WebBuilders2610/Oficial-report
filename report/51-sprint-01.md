@@ -263,3 +263,8 @@ Todos los integrantes participaron activamente en la implementación de la Landi
 - GitHub
 - Visual Studio Code
 - Discord
+
+<img src="assets/evidences/team_commits.png">
+
+<img src="assets/evidences/team_contributions.png">
+
