@@ -138,6 +138,23 @@ Durante este Sprint se implementaron las funcionalidades principales relacionada
 
 A continuación, se presentan capturas de pantalla de las vistas principales implementadas durante el Sprint:
 
+**Vista principal de la Landing Page**
+
+<img src="assets/evidences/home.png">
+
+**Sección de beneficios del sistema**
+<img src="assets/evidences/benefits.png">
+
+**Sección de testimonios**
+<img src="assets/evidences/testimonials.png">
+
+**Sección de planes**
+<img src="assets/evidences/plans.png">
+
+**Vista responsive en dispositivos móviles**
+
+<img src="assets/evidences/siran_mobile.png">
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 Durante el **Sprint 1** no se desarrollaron Web Services ni endpoints RESTful, debido a que el alcance del Sprint estuvo centrado exclusivamente en la implementación de la Landing Page informativa del sistema SIRAN.
@@ -152,6 +169,7 @@ Sin embargo, durante este Sprint se definieron las bases funcionales y técnicas
 - Generación de reportes médicos
 
 Estas funcionalidades serán abordadas en Sprints posteriores.
+
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 Durante el **Sprint 1**, el equipo implementó el despliegue de la Landing Page de SIRAN utilizando **GitHub Pages** como plataforma de hosting web estático.
 
@@ -170,8 +188,10 @@ Esta configuración permitió automatizar parcialmente el proceso de publicació
 ### Proceso de despliegue realizado
 
 #### 1. Creación y configuración del repositorio
-
 - Se creó el repositorio oficial del proyecto.
+
+   https://github.com/WebBuilders2610/LandingPageOficial
+  
 - Se configuró la estructura inicial del proyecto y control de versiones con Git.
 #### 2. Configuración de GitHub Pages
 
@@ -183,6 +203,8 @@ Esta configuración permitió automatizar parcialmente el proceso de publicació
 
 - Cada actualización integrada en la rama principal fue publicada automáticamente.
 - Se validó la visualización correcta en navegadores modernos y dispositivos móviles.
+
+    https://webbuilders2610.github.io/LandingPageOficial/
 
 ---
 #### 5.2.1.8. Team Collaboration Insights during Sprint
