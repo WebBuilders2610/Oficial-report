@@ -92,11 +92,152 @@ A continuación, se detallan las User Stories y las Tasks asignadas a cada miemb
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
+En esta sección se presenta la evidencia del desarrollo realizado durante el Sprint 1 del proyecto SIRAN (Sistema Inteligente de Registro y Alerta Neonatal). Durante este sprint, el equipo se enfocó principalmente en la implementación de la Landing Page informativa, la cual representa el primer punto de contacto entre la plataforma y los usuarios potenciales, incluyendo padres y profesionales neonatales.
+
+El desarrollo de la Landing Page se realizó utilizando tecnologías web estándar como HTML, CSS y JavaScript, priorizando simplicidad, rendimiento y compatibilidad con múltiples dispositivos. Asimismo, se utilizó Visual Studio Code como entorno de desarrollo y GitHub para la gestión colaborativa del código fuente y control de versiones.
+
+Durante este Sprint se implementaron las funcionalidades principales relacionadas con:
+
+Estructura inicial de la Landing Page
+Sección de beneficios y funcionalidades de SIRAN
+Sección de testimonios y planes
+Navegación dinámica entre secciones
+Diseño responsive para distintos dispositivos
+Footer y sección de contacto
+Optimización visual y mejoras de accesibilidad
+
+El equipo trabajó bajo una estrategia de ramas basada en GitFlow simplificado, desarrollando funcionalidades en ramas feature antes de integrarlas en la rama develop.
+| **Repository**                     | **Branch**                 | **Commit Id** | **Commit Message**                      | **Commit Message Body**                                                       | **Committed on (Date)** |
+| ---------------------------------- | -------------------------- | ------------- | --------------------------------------- | ----------------------------------------------------------------------------- | ----------------------- |
+| WebBuilders2610/LandingPageOficial | develop                    | a12fd31       | feat: implement landing page structure  | Added initial HTML structure and semantic sections for the SIRAN Landing Page | 2026-04-21              |
+| WebBuilders2610/LandingPageOficial | feature/capturasdepantalla | b45ca22       | feat: add screenshots section           | Implemented screenshots section showing system interface previews             | 2026-04-21              |
+| WebBuilders2610/LandingPageOficial | feature/code-js-to-menu    | c88de19       | feat: implement dynamic navigation menu | Added JavaScript functionality for responsive navigation menu behavior        | 2026-04-21              |
+| WebBuilders2610/LandingPageOficial | feature/equipo             | d51ab73       | feat: add team section                  | Implemented team members section with cards and responsive structure          | 2026-04-21              |
+| WebBuilders2610/LandingPageOficial | feature/pricing            | e20fd11       | feat: add pricing section               | Added pricing and plans section for visitors                                  | 2026-04-21              |
+| WebBuilders2610/LandingPageOficial | feature/testimonios        | f73aa54       | feat: implement testimonials section    | Added testimonials section with responsive cards and user feedback            | 2026-04-21              |
+| WebBuilders2610/LandingPageOficial | develop                    | g41cc28       | style: improve responsive design        | Improved responsive visualization for desktop, tablet and mobile devices      | 2026-04-21              |
+| WebBuilders2610/LandingPageOficial | develop                    | h92fd67       | fix: correct layout alignment           | Fixed spacing, alignment issues and improved overall visual consistency       | 2026-04-21              |
+
+
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
+En esta sección se presenta la evidencia del desarrollo realizado durante el **Sprint 1** del proyecto **SIRAN** (Sistema Inteligente de Registro y Alerta Neonatal). Durante este sprint, el equipo se enfocó principalmente en la implementación de la **Landing Page informativa**, la cual representa el primer punto de contacto entre la plataforma y los usuarios potenciales, incluyendo padres y profesionales neonatales.
+
+El desarrollo de la Landing Page se realizó utilizando tecnologías web estándar como **HTML**, **CSS** y **JavaScript**, priorizando simplicidad, rendimiento y compatibilidad con múltiples dispositivos. Asimismo, se utilizó **Visual Studio Code** como entorno de desarrollo y **GitHub** para la gestión colaborativa del código fuente y control de versiones.
+
+Durante este Sprint se implementaron las funcionalidades principales relacionadas con:
+
+- Estructura inicial de la Landing Page
+- Sección de beneficios y funcionalidades de SIRAN
+- Sección de testimonios y planes
+- Navegación dinámica entre secciones
+- Diseño responsive para distintos dispositivos
+- Footer y sección de contacto
+- Optimización visual y mejoras de accesibilidad
+
+
+A continuación, se presentan capturas de pantalla de las vistas principales implementadas durante el Sprint:
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+Durante el **Sprint 1** no se desarrollaron Web Services ni endpoints RESTful, debido a que el alcance del Sprint estuvo centrado exclusivamente en la implementación de la Landing Page informativa del sistema SIRAN.
 
+Por ello, no se generó documentación OpenAPI ni especificaciones Swagger relacionadas con servicios backend.
+
+Sin embargo, durante este Sprint se definieron las bases funcionales y técnicas necesarias para la futura implementación de APIs relacionadas con:
+
+- Registro de parámetros neonatales
+- Gestión de alertas inteligentes
+- Consulta de historial clínico
+- Generación de reportes médicos
+
+Estas funcionalidades serán abordadas en Sprints posteriores.
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+Durante el **Sprint 1**, el equipo implementó el despliegue de la Landing Page de SIRAN utilizando **GitHub Pages** como plataforma de hosting web estático.
+
+La estrategia de despliegue permitió publicar rápidamente el sitio web y mantener integración directa con el repositorio principal del proyecto alojado en GitHub.
+
+### Estrategia de despliegue implementada
+
+Se utilizó un enfoque de despliegue simple y eficiente basado en:
+
+- GitHub
+- GitHub Pages
+- Integración automática desde la rama `main`
+
+Esta configuración permitió automatizar parcialmente el proceso de publicación y asegurar disponibilidad continua del sitio web.
+
+### Proceso de despliegue realizado
+
+#### 1. Creación y configuración del repositorio
+
+- Se creó el repositorio oficial del proyecto.
+- Se configuró la estructura inicial del proyecto y control de versiones con Git.
+#### 2. Configuración de GitHub Pages
+
+- Se accedió a la configuración del repositorio en GitHub.
+- Se habilitó GitHub Pages como servicio de hosting.
+- Se seleccionó la rama `main` como fuente de despliegue.
+
+#### 3. Publicación del sitio
+
+- Cada actualización integrada en la rama principal fue publicada automáticamente.
+- Se validó la visualización correcta en navegadores modernos y dispositivos móviles.
+
+---
 #### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Durante el **Sprint 1**, el equipo de desarrollo de SIRAN mantuvo una colaboración activa y organizada, permitiendo cumplir satisfactoriamente con los objetivos establecidos para la implementación de la Landing Page.
+
+La coordinación del trabajo se realizó mediante **GitHub** y reuniones periódicas de seguimiento, permitiendo distribuir tareas y mantener un flujo constante de integración de cambios.
+
+### Metodología de trabajo colaborativo
+
+El equipo utilizó una estrategia basada en **GitFlow simplificado**, donde:
+
+- La rama `main` almacenó versiones estables
+- La rama `develop` integró avances generales
+- Las ramas `feature` permitieron desarrollar funcionalidades específicas
+
+Cada integrante trabajó sobre funcionalidades asignadas y posteriormente integró sus cambios mediante commits organizados y descriptivos.
+
+### Actividades colaborativas realizadas
+
+#### 1. Desarrollo por funcionalidades
+
+Cada integrante trabajó en módulos específicos como:
+
+- Navegación y estructura HTML
+- Diseño responsive
+- Secciones informativas
+- Footer y contacto
+- Optimización visual
+
+#### 2. Control de versiones
+
+Se utilizaron commits siguiendo la convención **Conventional Commits**:
+
+```bash
+git commit -m "feat: add testimonials section"
+git commit -m "fix: improve responsive layout"
+git commit -m "style: update footer design"
+```
+
+#### 3. Comunicación del equipo
+
+La coordinación se realizó mediante:
+
+- **Discord** para reuniones y seguimiento
+- **GitHub** para revisión de avances
+- Organización de tareas mediante **Sprint Backlog**
+
+### Participación del equipo
+
+Todos los integrantes participaron activamente en la implementación de la Landing Page, contribuyendo mediante desarrollo, diseño, integración y pruebas visuales.
+
+### Herramientas colaborativas utilizadas
+
+- Git
+- GitHub
+- Visual Studio Code
+- Discord
