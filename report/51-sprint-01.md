@@ -90,6 +90,7 @@ A continuación, se detallan las User Stories y las Tasks asignadas a cada miemb
 | TS05              | Implementación de Landing Page             | T-17        | Pruebas de visualización           | Verificar correcta visualización y funcionamiento de la Landing Page                       | 2                      | Ángel Gabriel   | Done       |
 | TS05              | Implementación de Landing Page             | T-18        | Despliegue inicial del proyecto    | Publicar la versión inicial de la Landing Page en entorno de despliegue                    | 2                      | Said            | Done       |
 
+<img src="assets/sprint_backlog/sprint_backlog1.png">
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 En esta sección se presenta la evidencia del desarrollo realizado durante el Sprint 1 del proyecto SIRAN (Sistema Inteligente de Registro y Alerta Neonatal). Durante este sprint, el equipo se enfocó principalmente en la implementación de la Landing Page informativa, la cual representa el primer punto de contacto entre la plataforma y los usuarios potenciales, incluyendo padres y profesionales neonatales.
