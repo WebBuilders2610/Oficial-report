@@ -53,39 +53,125 @@ Se creó un repositorio para la Landing Page del sistema:
 - URL del repositorio:  
 https://github.com/WebBuilders2610/LandingPageOficial
 
+<img src="assets/evidences/github_landing_page.png">
+
 ---
+### Flujo de trabajo GitFlow:
+
+<img src="assets/evidences/gitflow.png">
 
 ### Estrategia de ramas
 
 Se utilizó una estrategia basada en GitFlow simplificado:
 
-| Tipo de rama | Prefijo | Ejemplo |
-|--------------|--------|--------|
-| Principal | main | main |
-| Desarrollo | develop | develop |
-| Feature | feature/ | feature/landing-page |
-| Bugfix | bugfix/ | bugfix/fix-navbar |
+#### Rama principal (`main`)
+
+La rama `main` contiene las versiones **estables y funcionales** del proyecto. Únicamente se integran cambios previamente revisados y validados por el equipo. Esta rama representa la versión oficial desplegada de la solución.
 
 ---
 
-### Flujo de trabajo
+#### Rama de desarrollo (`develop`)
 
-- La rama **main** contiene versiones estables del proyecto  
-- La rama **develop** integra los avances en desarrollo  
-- Las funcionalidades se desarrollan en ramas **feature**  
-- Los errores se corrigen en ramas **bugfix**  
+La rama `develop` se utiliza para integrar todas las funcionalidades desarrolladas durante el Sprint antes de pasar a producción. Aquí se centralizan los avances colaborativos del equipo y se realizan validaciones generales de integración.
 
 ---
 
-### Convención de commits
+#### Ramas de funcionalidades (`feature`)
 
-Se utilizó el estándar **Conventional Commits**:
+Cada funcionalidad o mejora del sistema se desarrolla en una rama independiente derivada de `develop`. Esto permite trabajar de forma paralela sin afectar la estabilidad del proyecto principal.
+
+**La convención utilizada para nombrar las ramas sigue el patrón:**
+
+- feature/nombre-funcionalidad
+
+**Ejemplos:**
+
+- feature/capturasdepantalla
+- feature/code-js-to-menu
+- feature/equipo
+
+Una vez finalizada y validada la funcionalidad, la rama es fusionada hacia `develop` mediante **Pull Requests**.
+
+---
+
+#### Ramas de lanzamiento (`release`)
+
+Las ramas `release` se utilizarán en futuras iteraciones para preparar versiones estables listas para producción. Estas ramas permitirán realizar pruebas finales, ajustes menores y validaciones antes de integrar cambios en `main`.
+
+**La convención definida es:**
+
+- release/vX.Y.Z
+
+**Ejemplo:**
+
+- release/v1.0.0
+
+El versionamiento seguirá el estándar **Semantic Versioning 2.0.0**, considerando:
+
+- `X` → cambios mayores incompatibles
+- `Y` → nuevas funcionalidades compatibles
+- `Z` → correcciones y mejoras menores
+
+---
+
+#### Ramas de corrección (`hotfix`)
+
+Las ramas `hotfix` estarán destinadas a corregir errores críticos detectados en producción dentro de la rama `main`.
+
+**La convención definida es:**
+
+- hotfix/nombre-correccion
+
+**Ejemplo:**
+
+- hotfix/fix-navbar
+
+Estas correcciones serán integradas tanto en `main` como en `develop` para mantener consistencia entre versiones.
+
+---
+
+### Convenciones de Commits
+
+Para los mensajes de commits se aplicó el estándar **Conventional Commits**, basado en *Angular Commit Guidelines*. Esta convención facilita la lectura del historial de cambios y mejora la organización del proyecto.
+
+#### Estructura utilizada
 
 ```bash
-git commit -m "feat: add landing page structure"
-git commit -m "fix: correct responsive layout issue"
-git commit -m "style: improve button design"
+git commit -m "<type>: <description>"
 ```
+
+#### Tipos de commits utilizados
+
+| Tipo       | Descripción                        |
+|------------|------------------------------------|
+| `feat`     | Nueva funcionalidad                |
+| `fix`      | Corrección de errores              |
+| `style`    | Cambios visuales o de formato      |
+| `refactor` | Reestructuración de código         |
+| `docs`     | Cambios en documentación           |
+
+#### Ejemplos
+
+```bash
+git commit -m "feat: implement landing page structure"
+git commit -m "feat: add testimonials section"
+git commit -m "style: improve responsive design"
+git commit -m "fix: correct layout alignment"
+```
+
+---
+
+### Beneficios de la estrategia aplicada
+
+La implementación de **GitFlow** permitió:
+
+- Organizar el trabajo colaborativo del equipo
+- Mantener estabilidad en las versiones del proyecto
+- Facilitar la integración continua
+- Controlar cambios de manera estructurada
+- Mejorar la trazabilidad de funcionalidades y correcciones
+- Preparar el proyecto para futuras etapas de escalabilidad y despliegue continuo
+
 ## 5.1.3. Source Code Style Guide & Conventions
 
 En esta sección se definen las convenciones de estilo adoptadas para asegurar la calidad, legibilidad y mantenibilidad del código del proyecto SIRAN.
