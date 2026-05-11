@@ -149,36 +149,103 @@ En esta sección se definen las convenciones de estilo adoptadas para asegurar l
 
 ## 5.1.4. Software Deployment Configuration
 
-Para el despliegue de la Landing Page del sistema SIRAN se utilizó un enfoque basado en hosting web estático, adecuado para aplicaciones desarrolladas con HTML, CSS y JavaScript.
+En esta sección se documenta el proceso de despliegue de la Landing Page del sistema SIRAN utilizando GitHub y GitHub Pages como plataforma de hosting y el proceso de despliegue para el Frontend Web Application utilizando Firebase.
 
-### Estrategia de despliegue
+### Despliegue de la Landing Page
 
-El proyecto fue desplegado con
-
-- GitHub Pages  
-
-
-Estas plataformas permiten publicar aplicaciones web de manera rápida, gratuita y con integración directa desde repositorios Git.
+Para que la Landing Page de SIRAN esté disponible para los usuarios, se realizó el despliegue mediante **GitHub Pages**, permitiendo publicar automáticamente el contenido del repositorio en un sitio web accesible desde internet.
 
 ---
 
-### Proceso de despliegue
+#### 1. Registro y configuración en GitHub
 
-1. Subir el código al repositorio en GitHub  
-2. Configurar el servicio de hosting (por ejemplo, GitHub Pages o Netlify)  
-3. Seleccionar la rama principal (`main`)  
-4. Publicar el sitio automáticamente  
+Se creó una cuenta y organización en GitHub para almacenar y gestionar el código fuente del proyecto SIRAN. Posteriormente, se configuró el repositorio principal del proyecto para centralizar el desarrollo colaborativo.
 
 ---
 
-### URL del despliegue
+#### 2. Creación del repositorio
 
-https://webbuilders2610.github.io/LandingPageOficial/
+- Se seleccionó la opción **"New Repository"** dentro de GitHub.
+- El repositorio fue creado con el nombre:
+  - `LandingPageOficial`
+- El repositorio pertenece a la organización:
+  - `WebBuilders2610`
+
+<img src="assets/evidences/landing_page_repository.png">
 
 ---
 
-### Consideraciones
+#### 3. Configuración del repositorio
 
-- El sistema es accesible desde navegadores modernos  
-- No requiere instalación adicional  
-- Permite futuras integraciones con servicios backend y módulos inteligentes  
+- El repositorio se configuró con **visibilidad pública** para facilitar el acceso y despliegue.
+- Se agregó un archivo `README.md` inicial con información del proyecto.
+- Se definió una estructura organizada de ramas utilizando **GitFlow simplificado**:
+  - `main`
+  - `develop`
+  - `feature/*`
+  - `bugfix/*`
+
+---
+
+#### 4. Carga del proyecto al repositorio
+
+- Se desarrolló la Landing Page utilizando **HTML**, **CSS** y **JavaScript**.
+- Los archivos del proyecto fueron subidos al repositorio mediante **Git**.
+- Se realizaron commits utilizando la convención **Conventional Commits**.
+- Los cambios fueron integrados progresivamente en la rama `develop` y posteriormente fusionados en `main`.
+
+<img src="Assets/evidences/github_commits_evidence.png">
+
+---
+
+#### 5. Configuración de GitHub Pages
+
+Para publicar la Landing Page se utilizó **GitHub Pages** siguiendo estos pasos:
+
+- Se ingresó a la configuración del repositorio.
+- En la sección **Pages**, se seleccionó:
+  - Rama de despliegue: `main`
+  - Carpeta raíz: `/root`
+- GitHub generó automáticamente la URL pública del sitio web.
+
+---
+
+#### 6. Verificación del despliegue
+
+Una vez configurado GitHub Pages, el sistema publicó automáticamente la Landing Page de SIRAN en producción.
+ https://webbuilders2610.github.io/LandingPageOficial/
+
+ Se verificó el correcto funcionamiento de:
+
+- Navegación entre secciones
+- Diseño responsive
+- Visualización de testimonios
+- Sección de planes
+- Información de contacto
+- Compatibilidad con navegadores modernos
+
+<img src="assets/evidences/landing_page_deploy_config.png">
+
+---
+
+#### 7. Actualización automática del sitio
+
+El flujo de actualización del sitio quedó definido de la siguiente manera:
+
+1. Realizar cambios en el proyecto local.
+2. Ejecutar commits utilizando Git.
+3. Hacer push al repositorio remoto en GitHub.
+4. Fusionar cambios hacia la rama `main`.
+5. GitHub Pages despliega automáticamente la nueva versión.
+
+Este flujo permitió mantener una **integración continua simple y eficiente** durante el desarrollo del Sprint.
+
+---
+
+### Consideraciones del despliegue
+
+- La Landing Page es accesible desde cualquier navegador moderno.
+- No requiere instalación adicional por parte del usuario.
+- El despliegue es automático al actualizar la rama principal.
+- La solución permite futuras integraciones con backend y servicios inteligentes.
+- GitHub Pages ofrece una alternativa gratuita y estable para aplicaciones web estáticas.
