@@ -6,4 +6,4 @@ El bounded context Service Execution and Monitoring Neonatal constituye el núcl
 
 Este contexto gestiona la evaluación de signos vitales, la generación de alertas y el registro de eventos críticos, garantizando una respuesta rápida y confiable ante cualquier variación significativa en el estado del bebé. Asimismo, coordina la comunicación de información y resultados hacia otros contextos del sistema, facilitando la toma de decisiones oportunas por parte del personal médico y fortaleciendo el cuidado preventivo neonatal.
 
-assets/Event-storming-6.png
+<img src="assets/Event-storming-6.png" width="300">
