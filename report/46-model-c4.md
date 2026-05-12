@@ -4,7 +4,7 @@ La arquitectura de software orientada al dominio en SIRAN es un enfoque de dise�
 
 ### 4.6.1. Design-Level Event Storming
 
-La sesión de Design-Level Event Storming se realizó con el objetivo de refinar el modelo del dominio y detallar sus elementos clave, identificando actores, comandos, eventos, políticas y agregados. A través de un trabajo colaborativo en Miro, se organizaron los flujos principales del sistema y se definieron los Bounded Contexts, estableciendo una base clara para el diseño de la arquitectura.
+La sesión de Design-Level Event Storming tuvo como propósito profundizar en el análisis del dominio y estructurar de manera detallada los componentes principales del sistema, tales como actores, comandos, eventos, políticas y agregados. Mediante una dinámica colaborativa desarrollada en Miro, se identificaron y organizaron los flujos esenciales del negocio, así como los distintos Bounded Contexts, permitiendo establecer una base sólida para el diseño arquitectónico de la solución.
 
 ### 4.6.2. Software Architecture Context Diagram
 
