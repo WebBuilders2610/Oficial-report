@@ -25,3 +25,10 @@ En esta sección se detalla la estructura interna de los contenedores, especific
 Neonatal Health Profiles BC:
 
 ![Software Architecture Components Diagram](assets/software-architecture/neonatal_health_profiles_component.png)
+
+Service Execution and Neonatal Monitoring BC:
+
+
+<p align="center">
+  <img src="assets/Component-diagram-6.png" width="700">
+</p>
