@@ -12,5 +12,5 @@ The architecture is organized into specialized components that collaborate to en
 This design promotes modularity, scalability, and maintainability by separating responsibilities across independent services. Furthermore, it enables reliable coordination between monitoring processes and alert management, supporting timely medical intervention and improving the overall safety and quality of neonatal care.
 
 <p align="center">
-  <img src="assets/Component-diagram-6.png" width="500">
+  <img src="assets/Component-diagram-6.png" width="700">
 </p>
