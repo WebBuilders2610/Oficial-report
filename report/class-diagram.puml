@@ -1,0 +1,537 @@
+@startuml SIRAN_ClassDiagram
+
+title Sistema SIRAN - Diagrama de Clases
+
+skinparam classAttributeIconSize 0
+skinparam classFontStyle Bold
+skinparam classFontSize 12
+skinparam packageFontSize 13
+skinparam packageFontStyle Bold
+skinparam ArrowColor #333333
+skinparam ClassBorderColor #2C5282
+skinparam ClassBackgroundColor #EBF4FF
+skinparam PackageBorderColor #2B6CB0
+skinparam PackageBackgroundColor #F0F4FF
+skinparam NoteBackgroundColor #FFFBEA
+skinparam NoteBorderColor #D69E2E
+
+' ─────────────────────────────────────────────
+' BC 1: IAM — Identity and Access Management
+' ─────────────────────────────────────────────
+package "IAM — Identity & Access Management" #EBF8FF {
+
+  class User {
+    - id: UUID
+    - email: String
+    - passwordHash: String
+    - role: UserRole
+    - isVerified: Boolean
+    - createdAt: DateTime
+    + register(): void
+    + login(): AuthToken
+    + logout(): void
+    + changePassword(newPwd: String): void
+  }
+
+  enum UserRole {
+    PARENT
+    NEONATOLOGIST
+    ADMIN
+  }
+
+  class AuthToken {
+    - token: String
+    - expiresAt: DateTime
+    - userId: UUID
+    + isValid(): Boolean
+    + refresh(): AuthToken
+    + revoke(): void
+  }
+
+  class Credential {
+    - userId: UUID
+    - type: CredentialType
+    - value: String
+    - updatedAt: DateTime
+    + validate(): Boolean
+    + update(value: String): void
+  }
+
+  enum CredentialType {
+    PASSWORD
+    OAUTH_TOKEN
+    TWO_FACTOR
+  }
+
+  User "1" --> "1..*" Credential : tiene
+  User --> UserRole
+  User "1" --> "0..*" AuthToken : genera
+  Credential --> CredentialType
+}
+
+' ─────────────────────────────────────────────
+' BC 2: Subscriptions & Payment Management
+' ─────────────────────────────────────────────
+package "Subscriptions & Payment Management" #F0FFF4 {
+
+  class SubscriptionPlan {
+    - id: UUID
+    - name: String
+    - price: Decimal
+    - currency: String
+    - durationDays: Integer
+    - features: List<String>
+    + isAvailable(): Boolean
+    + getDetails(): String
+  }
+
+  class Subscription {
+    - id: UUID
+    - userId: UUID
+    - planId: UUID
+    - status: SubscriptionStatus
+    - startDate: DateTime
+    - endDate: DateTime
+    + activate(): void
+    + cancel(): void
+    + isActive(): Boolean
+    + renew(): Subscription
+  }
+
+  enum SubscriptionStatus {
+    ACTIVE
+    INACTIVE
+    EXPIRED
+    CANCELLED
+  }
+
+  class Payment {
+    - id: UUID
+    - subscriptionId: UUID
+    - amount: Decimal
+    - currency: String
+    - status: PaymentStatus
+    - paidAt: DateTime
+    + process(): Boolean
+    + refund(): void
+    + getReceipt(): String
+  }
+
+  enum PaymentStatus {
+    PENDING
+    COMPLETED
+    FAILED
+    REFUNDED
+  }
+
+  Subscription --> SubscriptionPlan : basada en
+  Subscription --> SubscriptionStatus
+  Subscription "1" --> "0..*" Payment : genera
+  Payment --> PaymentStatus
+}
+
+' ─────────────────────────────────────────────
+' BC 3: Profiles & Preferences Management
+' ─────────────────────────────────────────────
+package "Profiles & Preferences Management" #FFF5F5 {
+
+  class UserProfile {
+    - id: UUID
+    - userId: UUID
+    - firstName: String
+    - lastName: String
+    - phone: String
+    - avatarUrl: String
+    + update(data: Map): void
+    + getFullName(): String
+  }
+
+  class NeonatalProfile {
+    - id: UUID
+    - name: String
+    - birthDate: DateTime
+    - gestationalAgeWeeks: Integer
+    - weight: Float
+    - height: Float
+    - bloodType: String
+    - parentUserId: UUID
+    + getAgeInDays(): Integer
+    + isPremature(): Boolean
+  }
+
+  class NotificationPreference {
+    - userId: UUID
+    - channel: NotificationChannel
+    - alertTypes: List<AlertType>
+    - isEnabled: Boolean
+    + enable(): void
+    + disable(): void
+    + update(config: Map): void
+  }
+
+  enum NotificationChannel {
+    EMAIL
+    SMS
+    PUSH
+    IN_APP
+  }
+
+  class ClinicalParameter {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - paramName: String
+    - minValue: Float
+    - maxValue: Float
+    - unit: String
+    + isWithinRange(value: Float): Boolean
+    + update(min: Float, max: Float): void
+  }
+
+  UserProfile "1" --> "0..*" NeonatalProfile : gestiona
+  UserProfile "1" --> "1..*" NotificationPreference : configura
+  NeonatalProfile "1" --> "1..*" ClinicalParameter : tiene
+  NotificationPreference --> NotificationChannel
+}
+
+' ─────────────────────────────────────────────
+' BC 4: Service Design & Planning
+' ─────────────────────────────────────────────
+package "Service Design & Planning" #FFFFF0 {
+
+  class CareSchedule {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - name: String
+    - frequency: ScheduleFrequency
+    - startDate: DateTime
+    - endDate: DateTime
+    + activate(): void
+    + deactivate(): void
+    + getNextOccurrence(): DateTime
+  }
+
+  enum ScheduleFrequency {
+    HOURLY
+    EVERY_TWO_HOURS
+    EVERY_SIX_HOURS
+    DAILY
+    CUSTOM
+  }
+
+  class CareTask {
+    - id: UUID
+    - scheduleId: UUID
+    - description: String
+    - priority: TaskPriority
+    - status: TaskStatus
+    - dueAt: DateTime
+    + complete(): void
+    + postpone(newDue: DateTime): void
+    + isPending(): Boolean
+  }
+
+  enum TaskPriority {
+    LOW
+    MEDIUM
+    HIGH
+    CRITICAL
+  }
+
+  enum TaskStatus {
+    PENDING
+    IN_PROGRESS
+    COMPLETED
+    SKIPPED
+  }
+
+  class CareRecommendation {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - content: String
+    - source: String
+    - generatedAt: DateTime
+    + apply(): void
+    + dismiss(): void
+  }
+
+  CareSchedule --> ScheduleFrequency
+  CareSchedule "1" --> "0..*" CareTask : contiene
+  CareTask --> TaskPriority
+  CareTask --> TaskStatus
+  CareSchedule "1" --> "0..*" CareRecommendation : genera
+}
+
+' ─────────────────────────────────────────────
+' BC 5: Resource & Asset Management
+' ─────────────────────────────────────────────
+package "Resource & Asset Management" #FFF0FF {
+
+  class HealthRecord {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - recordedAt: DateTime
+    - recordedBy: UUID
+    - notes: String
+    + getObservations(): List<Observation>
+    + archive(): void
+  }
+
+  class Observation {
+    - id: UUID
+    - healthRecordId: UUID
+    - parameterName: String
+    - value: Float
+    - unit: String
+    - observedAt: DateTime
+    + isAnomaly(): Boolean
+    + toReadable(): String
+  }
+
+  class ClinicalDocument {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - title: String
+    - fileUrl: String
+    - documentType: DocumentType
+    - uploadedAt: DateTime
+    + download(): Blob
+    + share(userId: UUID): void
+  }
+
+  enum DocumentType {
+    REPORT
+    IMAGE
+    LAB_RESULT
+    PRESCRIPTION
+  }
+
+  HealthRecord "1" --> "1..*" Observation : contiene
+  HealthRecord "1" --> "0..*" ClinicalDocument : adjunta
+  ClinicalDocument --> DocumentType
+}
+
+' ─────────────────────────────────────────────
+' BC 6: Service Execution & Monitoring
+' ─────────────────────────────────────────────
+package "Service Execution & Monitoring" #FFF8E1 {
+
+  class VitalSignReading {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - heartRate: Float
+    - spo2: Float
+    - temperature: Float
+    - respiratoryRate: Float
+    - timestamp: DateTime
+    + validate(): ValidationResult
+    + isWithinSafeRange(): Boolean
+  }
+
+  class ValidationResult {
+    - isValid: Boolean
+    - anomalyFlags: List<String>
+    - severity: AlertSeverity
+    + hasAnomalies(): Boolean
+    + getSummary(): String
+  }
+
+  class Alert {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - type: AlertType
+    - severity: AlertSeverity
+    - message: String
+    - triggeredAt: DateTime
+    - status: AlertStatus
+    + acknowledge(): void
+    + escalate(): void
+    + resolve(): void
+  }
+
+  enum AlertType {
+    LOW_SPO2
+    HIGH_HEART_RATE
+    LOW_HEART_RATE
+    HIGH_TEMPERATURE
+    ABNORMAL_RESPIRATORY_RATE
+  }
+
+  enum AlertSeverity {
+    INFO
+    WARNING
+    CRITICAL
+  }
+
+  enum AlertStatus {
+    ACTIVE
+    ACKNOWLEDGED
+    RESOLVED
+  }
+
+  class MonitoringSession {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - startedAt: DateTime
+    - endedAt: DateTime
+    - status: SessionStatus
+    + start(): void
+    + end(): void
+    + getCurrentReadings(): List<VitalSignReading>
+  }
+
+  enum SessionStatus {
+    ACTIVE
+    PAUSED
+    ENDED
+  }
+
+  MonitoringSession "1" --> "1..*" VitalSignReading : registra
+  VitalSignReading "1" --> "1" ValidationResult : produce
+  ValidationResult "1" --> "0..*" Alert : genera
+  Alert --> AlertType
+  Alert --> AlertSeverity
+  Alert --> AlertStatus
+  MonitoringSession --> SessionStatus
+}
+
+' ─────────────────────────────────────────────
+' BC 7: Dashboard & Analytics
+' ─────────────────────────────────────────────
+package "Dashboard & Analytics" #F0F8FF {
+
+  class Dashboard {
+    - id: UUID
+    - userId: UUID
+    - neonatalProfileId: UUID
+    - layout: String
+    + getWidgets(): List<DashboardWidget>
+    + refresh(): void
+  }
+
+  class DashboardWidget {
+    - id: UUID
+    - dashboardId: UUID
+    - widgetType: WidgetType
+    - config: Map
+    - position: Integer
+    + render(): Object
+    + configure(config: Map): void
+  }
+
+  enum WidgetType {
+    VITAL_CHART
+    ALERT_SUMMARY
+    TREND_GRAPH
+    HEALTH_SCORE
+    RECENT_READINGS
+  }
+
+  class AnalyticsReport {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - periodStart: DateTime
+    - periodEnd: DateTime
+    - generatedAt: DateTime
+    - reportType: ReportType
+    + generate(): void
+    + export(format: String): Blob
+    + getSummary(): String
+  }
+
+  enum ReportType {
+    DAILY
+    WEEKLY
+    MONTHLY
+    CUSTOM
+  }
+
+  class TrendAnalysis {
+    - id: UUID
+    - neonatalProfileId: UUID
+    - parameter: String
+    - trendDirection: TrendDirection
+    - analyzedAt: DateTime
+    + computeTrend(data: List<Float>): TrendDirection
+    + getInsights(): String
+  }
+
+  enum TrendDirection {
+    STABLE
+    IMPROVING
+    DECLINING
+    FLUCTUATING
+  }
+
+  Dashboard "1" --> "1..*" DashboardWidget : contiene
+  DashboardWidget --> WidgetType
+  Dashboard "1" --> "0..*" AnalyticsReport : muestra
+  AnalyticsReport --> ReportType
+  AnalyticsReport "1" --> "0..*" TrendAnalysis : incluye
+  TrendAnalysis --> TrendDirection
+}
+
+' ─────────────────────────────────────────────
+' BC 8: Loyalty & Engagement
+' ─────────────────────────────────────────────
+package "Loyalty & Engagement" #FFF0F0 {
+
+  class LandingContent {
+    - id: UUID
+    - section: String
+    - title: String
+    - body: String
+    - isVisible: Boolean
+    + publish(): void
+    + unpublish(): void
+  }
+
+  class UserEngagement {
+    - id: UUID
+    - userId: UUID
+    - loginCount: Integer
+    - lastLoginAt: DateTime
+    - featuresUsed: List<String>
+    + recordLogin(): void
+    + recordFeatureUse(feature: String): void
+    + getEngagementScore(): Float
+  }
+
+  class Testimonial {
+    - id: UUID
+    - authorName: String
+    - role: String
+    - content: String
+    - rating: Integer
+    - isApproved: Boolean
+    + approve(): void
+    + reject(): void
+  }
+
+  LandingContent "1" --> "0..*" Testimonial : presenta
+  UserEngagement "1" --> "1" User : referencia
+}
+
+' ─────────────────────────────────────────────
+' Relaciones Inter-Contexto
+' ─────────────────────────────────────────────
+User "1" --> "1" UserProfile : tiene
+User "1" --> "0..1" Subscription : posee
+User "1" --> "0..*" HealthRecord : genera
+UserProfile "1" --> "0..*" NeonatalProfile : registra
+NeonatalProfile "1" --> "0..*" MonitoringSession : monitorea
+NeonatalProfile "1" --> "0..*" HealthRecord : historial
+NeonatalProfile "1" --> "1" Dashboard : visualiza
+MonitoringSession ..> Alert : <<emite>>
+Alert ..> NotificationPreference : <<notifica via>>
+
+note top of User
+  Entidad raíz del sistema.
+  Relacionada con todos los contextos.
+end note
+
+note bottom of VitalSignReading
+  Núcleo del monitoreo neonatal.
+  SpO2, FC, temperatura, FR.
+end note
+
+@enduml
