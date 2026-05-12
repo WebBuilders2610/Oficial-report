@@ -73,7 +73,10 @@ A continuación, se detallan las User Stories y las Tasks asignadas a cada miemb
 | TS05 | Implementación Frontend | T-30 | Integrar estilos responsive | Optimizar vistas para desktop y móviles | 3 | Angel Gabriel | Done |
 | TS05 | Implementación Frontend | T-31 | Realizar pruebas funcionales | Verificar navegación y funcionamiento de vistas | 2 | Alexander | In-process |
 
-<img src="assets/sprint_backlog/sprint_backlog2.png">
+<img src="assets/sprint-2/sprint_backlog2.png">
+
+URL: https://trello.com/invite/b/6a033ee9a0cb9740dc1eed1c/ATTI29046ef8bf1d80abbb33aa03382df3fa64095774/sprint-backlog-2 
+
 
 
 #### 5.2.2.4. Development Evidence for Sprint Review
@@ -122,23 +125,7 @@ A continuación, se presentan capturas de pantalla de las principales vistas imp
 
 **Vista Dashboard Principal**
 
-<img src="assets/evidences/dashboard_siran.png">
-
-**Formulario de registro neonatal**
-
-<img src="assets/evidences/form_neonatal.png">
-
-**Vista de historial clínico**
-
-<img src="assets/evidences/historial_clinico.png">
-
-**Vista de reportes médicos**
-
-<img src="assets/evidences/reportes_siran.png">
-
-**Vista responsive en dispositivos móviles**
-
-<img src="assets/evidences/frontend_mobile.png">
+<img src="assets/sprint-2/dashoard_general.png">
 
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
@@ -256,6 +243,6 @@ La coordinación del Sprint se realizó mediante:
 - Vercel
 - Discord
 
-<img src="assets/evidences/frontend_team_commits.png">
+<img src="assets/sprint-2/team_contributions2.png">
 
-<img src="assets/evidences/frontend_team_contributions.png">
+<img src="assets/sprint-2/team_stadistics2.png">
