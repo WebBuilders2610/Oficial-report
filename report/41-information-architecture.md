@@ -1,86 +1,74 @@
 
-## 4.1. Style Guidelines
+La arquitectura de la información de SIRAN ha sido diseñada con el objetivo de organizar el contenido de manera clara, estructurada y centrada en el usuario, permitiendo una navegación intuitiva tanto para padres como para el personal médico. Esta estructura facilita el acceso rápido a información crítica relacionada con el monitoreo neonatal, reduciendo la carga cognitiva y mejorando la experiencia de uso.
 
-### 4.1.1. General Style Guidelines
+### 4.2.1. Organization Systems
 
-__Branding:__
+|Tópico|Definición|
+|------|----------|
+|Home|La página de inicio que ofrece una vista general de la clínica, destacando nuestra misión de cuidar a los más pequeños con ternura y tecnología.|
+|Beneficios|La sección que destaca los pilares de valor del servicio, como la tecnología neonatal avanzada.|
+|Testimonios|La sección que presenta experiencias reales de padres, brindando confianza y tranquilidad sobre la salud de sus hijos.|
+|Planes|La sección que detalla las opciones de suscripción y niveles de atención, permitiendo comparar funciones y costos según cada necesidad.|
+|Empezar|El botón de acción destacado que redirige al usuario para iniciar su registro o contratar el plan de salud seleccionado de inmediato.|
 
-Para el logotipo de SIRAN, se ha optado por un diseño protector y clínico que refleja la seguridad de la aplicación. El logotipo se compone de una tipografía sólida y moderna, acompañada de un icono que simboliza el cuidado neonatal y el monitoreo constante, así como un escudo de protección. Los colores utilizados son tonos azules y celestes, lo que refuerza la idea de confianza, salud y tranquilidad.
+__Sección de Planes de Subscripción__
 
-![logo SIRAN](assets/Chapter-4/logo.png)
+|Tópico|Definición|
+|------|----------|
+|Catálogo de membresías|Este apartado presenta de forma clara todas las opciones de suscripción disponibles para el monitoreo y cuidado del bebé.|
+|Especificaciones del servicio|Aquí se desglosan las características, coberturas y beneficios particulares que incluye cada nivel de atención de SIRAN.|
 
-__Tipografía:__
+__Sección de Testimonios__
 
-La tipografía de nuestra aplicación será fácilmente legible y estética, por lo que se hará uso de la fuente Poppins para los botones y títulos. Para los textos haremos uso de Roboto, con interlineado de 1,15 con el tamaño base de 18px en la página web, además para la versión móvil el tamaño de letra será 16px.
+|Tópico|Definición|
+|------|----------|
+|Panel de experiencias|El sitio presentará una selección destacada con los encabezados de los testimonios más recientes compartidos por las familias.|
 
-__Pesos:__
+__Menú Superior Estructurado:__ Se implementa una barra de navegación fija y homogénea que permite al usuario desplazarse con fluidez entre los módulos clave de la plataforma sin perder el contexto.
 
-# Heading 1 (18px, Bold, Negro)
-# Heading 1 (18px, Normal, Blanco)
+__Adaptabilidad Multiplataforma:__ La interfaz emplea un diseño flexible que ajusta automáticamente su composición y elementos visuales, garantizando una experiencia de uso intuitiva y funcional tanto en computadoras como en dispositivos móviles.
 
-## Heading 2 (16px, Rojo)
-## Heading 2 (16px, SkyBlue)
+### 4.2.2. Labeling Systems
 
-### Heading 3 (14px, LawnGreen)
+Para la organización de la interfaz, se ha implementado un sistema de etiquetado basado en **encabezados descriptivos** que agrupan lógicamente el contenido. Esta estructura permite que el usuario identifique de forma inmediata la función de cada sección, reduciendo la incertidumbre y facilitando la navegación mediante clics precisos.
 
-**Text (11px, Bold, Rojo)**
+|Tópico|Definición|
+|------|----------|
+|Home|Punto de acceso principal y presentación de la propuesta de valor de la clínica de monitoreo neonatal.|
+|Planes|Sección donde se detallan las coberturas, beneficios clínicos y tarifas vigentes para la suscripción al servicio.|
+|Testimonios|Espacio dedicado a la validación social, donde se exhiben las experiencias y valoraciones de las familias atendidas.|
 
-Text (9px, Blanco)
+### 4.2.3. SEO Tags and Meta Tags
 
-__Colors:__
+Para SIRAN, las meta etiquetas son fundamentales para garantizar que nuestra plataforma de monitoreo sea indexada correctamente por los motores de búsqueda, permitiendo que las familias y clínicas nos encuentren bajo criterios de seguridad y cuidado infantil. Estas etiquetas optimizan el análisis de nuestro código HTML y fortalecen la autoridad digital del proyecto.
 
-Nuestra plataforma, al estar dirigida a centros de salud y atención neonatal, utiliza una paleta cromática que transmite confianza, cuidado y profesionalismo: el #E3EDFF (azul lavanda pálido) aporta calma y cercanía en testimonios, el #FFFFFF (blanco) representa limpieza y orden, el #F2F2F2 (blanco grisáceo) permite diferenciar secciones con sutileza, el #4A7FF0 (azul brillante) resalta elementos interactivos y fomenta la interacción, el #000000 (negro) asegura legibilidad y formalidad en los textos, el #C0EEE3 (cian pastel) transmite bienestar y armonía, y el #CDEBFF ( pastel celeste) refuerza la serenidad y la seguridad visual en la experiencia del usuario.
+- __Título (Title Tag):__ Representa el nombre principal de la página que aparece en las pestañas del navegador y resultados de búsqueda. Para el proyecto, se define como: "SIRAN | Monitoreo Neonatal Inteligente y Cuidado Pediátrico". Su objetivo es captar la atención mediante una promesa de valor clara y profesional.
 
-![colors](assets/Chapter-4/colors.png)
+- __Codificación de caracteres (Charset):__ Se ha implementado el estándar UTF-8. Esta decisión técnica garantiza la visualización correcta de caracteres especiales (como tildes y eñes) propios del idioma español, optimizando además el uso de memoria para los navegadores y asegurando que el contenido clínico se lea sin errores en cualquier región.
 
-__Spacing:__
+- __Descripción (Meta Description):__ Esta etiqueta ofrece un resumen ejecutivo del servicio. En el caso de SIRAN, se utiliza para comunicar confianza: "Cuidamos de los más pequeños con ternura y tecnología avanzada. Descubre nuestro sistema de monitoreo neonatal con alertas en tiempo real y atención pediátrica experta."
 
-El diseño de Siran destaca por un espacio amplio y regular que sirve como eje organizador. Esta apuesta por el "aire" entre elementos mejora la claridad informativa y proyecta una imagen de orden y estabilidad, haciendo que la interacción del usuario sea mucho más cómoda.
+- __Palabras clave (Keywords):__ Se han seleccionado términos estratégicos de alta relevancia para nuestro nicho, tales como: monitoreo neonatal, salud infantil, tecnología médica, clínica pediátrica, alertas médicas, SIRAN, cuidado del bebé.
 
-Escala de Espaciado (Spacing System)
-4PX --- Micro-ajustes (iconos, etiquetas pequeñas).
-8PX --- Espaciado interno entre elementos muy cercanos (título y subtítulo).
-12PX --- Espaciado entre elementos de una lista o tarjetas pequeñas.
-16PX --- Relleno (padding) interno estándar para botones y tarjetas.
-20PX --- Espaciado entre bloques de texto cortos.
-24PX --- Margen entre elementos de un mismo grupo (botones de planes).
-32PX --- Espacio entre columnas o elementos secundarios.
-40PX --- Margen superior/inferior para secciones pequeñas de contenido.
-48PX --- Separación estándar entre secciones de información (Testimonios).
-64PX --- Espaciado generoso para resaltar el Hero (cabecera).
-80PX --- Margen de seguridad para respiración visual en dispositivos móviles.
-96PX --- Separación amplia entre secciones principales (Precios y Beneficios).
-128PX --- Margen superior/inferior para secciones de impacto visual alto.
-160PX --- Espaciado máximo para secciones con mucho aire (Capturas de pantalla).
-192PX --- Margen de diseño para pantallas de escritorio extra anchas.
-256PX --- Espaciado de diseño para composiciones artísticas o cierres de página.
+- __Autor y derechos de autor (Author & Copyright):__ Se utiliza para registrar la propiedad intelectual del software y la autoría del equipo de desarrollo, estableciendo a "Equipo SIRAN" como los responsables legales y creativos del contenido y la plataforma.
 
-__Tono de Comunicación y Lenguaje__
+### 4.2.4. Searching Systems
 
-Para SIRAN, las dimensiones de comunicación se sitúan en un punto de equilibrio entre la autoridad clínica y la empatía humana, adoptando las siguientes posturas:
+El motor de búsqueda de SIRAN es una herramienta crítica diseñada para que los padres y el personal médico localicen servicios, especialistas o información de salud de manera inmediata y precisa.
 
-- Serio : El manejo de datos vitales de bebés exige un rigor absoluto. La comunicación debe transmitir precisión y responsabilidad.
+- __Búsqueda por Necesidad Clínica:__ Los usuarios podrán realizar búsquedas basadas en el estado o requerimiento del lactante, ya sea para monitoreo preventivo, consultas de nutrición neonatal o seguimiento de signos vitales.
 
-- Formal: Se utiliza un lenguaje profesional que respete la relación médico-paciente y la institucionalidad de la clínica.
+- __Búsqueda por Especialidad:__ Permite localizar profesionales de la salud por su área de experticia específica, tales como: neonatología, cardiología pediátrica, especialistas en lactancia o urgencias pediátricas.
 
-- Respetuoso: Se reconoce la vulnerabilidad y la preocupación de los padres y el personal médico ante una alerta.
+- __Resultados de Alta Relevancia:__ El sistema prioriza los resultados basándose en la urgencia y el historial de salud del paciente, ordenando la información de manera que las soluciones más críticas o mejor valoradas aparezcan en primer lugar.
 
-- Sereno: En lugar de una energía vibrante, se busca una calma que inspira control y seguridad en momentos de tensión.
+### 4.2.5. Navigation Systems
 
-__Sustento de Principios y Orientación del Servicio__
+El Sistema de Navegación constituye el marco estructural que garantiza un desplazamiento intuitivo y fluido de los usuarios a través de los diversos módulos y pantallas de la plataforma. Su diseño está orientado a minimizar el número de clics necesarios para acceder a la información crítica del paciente.
 
-La página estará orientada como una extensión digital de la confianza clínica. Tomando como referencia sistemas de diseño como Carbon Health o Spectrum (Adobe), las decisiones se basan en:
+__Jerarquía de Navegación:__ El sistema se organiza mediante las siguientes secciones fundamentales, integradas de forma persistente en la barra de navegación superior para asegurar una orientación constante dentro del ecosistema digital.
 
-__1. Claridad Operativa:__ Reducción de ruido visual. La información crítica (alertas y signos) debe ser legible en segundos, priorizando la jerarquía visual para evitar la fatiga cognitiva del personal de salud.
-
-__2. Empatía Silenciosa:__ El uso de espacios en blanco y una paleta de azules suaves busca reducir la ansiedad del usuario, creando una interfaz que se siente como una herramienta de apoyo, no como una fuente de estrés adicional.
-
-__3. Accesibilidad y Confiabilidad:__ El diseño se centra en la "consistencia" (un principio de Material Design), asegurando que cada icono y mensaje de lenguaje sea predecible, eliminando cualquier ambigüedad en la interpretación de los datos del bebé.
-
-"SIRAN se presenta como un ecosistema de vigilancia silenciosa y precisa, donde la tecnología se humaniza para ofrecer paz mental a través de una comunicación directa, experta y profundamente protectora."
-
-### 4.1.2. Web Style Guidelines
-
-Para SIRAN, hemos diseñado una plataforma web bajo un enfoque de Diseño Adaptable (Responsive Web Design), garantizando que el monitoreo clínico y la información de salud sean accesibles y perfectamente legibles desde cualquier dispositivo, ya sea una tablet en clínica o un smartphone para los padres.
-
-Como equipo, hemos optado por incorporar el patrón de diseño en forma de F en nuestro sitio web. Esta técnica es ideal para páginas con carga de contenido informativo y servicios clínicos, ya que emula el comportamiento natural de lectura. Ubicamos el logotipo en la esquina superior izquierda para establecer identidad inmediata, seguido de un menú de navegación horizontal que culmina en un botón de acción (CTA) destacado en la esquina superior derecha para facilitar la conversión inmediata.
+- Home
+- Beneficios
+- Testimonios
+- Planes
