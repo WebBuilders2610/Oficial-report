@@ -1,0 +1,5 @@
+# Ignorar el script de exportación
+export.py
+
+# Ignorar el PDF del informe
+Informe_Final_TB1.pdf

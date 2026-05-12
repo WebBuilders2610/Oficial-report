@@ -1,4 +1,3 @@
-## 4.2. Information Architecture
 
 La arquitectura de la información de SIRAN ha sido diseñada con el objetivo de organizar el contenido de manera clara, estructurada y centrada en el usuario, permitiendo una navegación intuitiva tanto para padres como para el personal médico. Esta estructura facilita el acceso rápido a información crítica relacionada con el monitoreo neonatal, reduciendo la carga cognitiva y mejorando la experiencia de uso.
 
