@@ -1,4 +1,5 @@
 ### 4.6.2. Software Architecture Context Diagram
+
 6. Service Execution and Neonatal Monitoring
 
 The Context Diagram of the Service Execution and Neonatal Monitoring bounded context provides a high-level view of how SIRAN interacts with its primary users and external actors. This diagram illustrates the relationship between the neonatal monitoring platform and the stakeholders involved in the monitoring process, including parents and pediatricians.
@@ -12,6 +13,7 @@ This representation helps define the system boundaries and clarifies the interac
 </p>
 
 ### 4.6.3. Software Architecture Container Diagrams
+
 6. Service Execution and Neonatal Monitoring
 
 The Container Diagram of the Service Execution and Neonatal Monitoring bounded context describes the main technological containers that compose the SIRAN platform and the interactions between them. This diagram illustrates how the frontend application, backend services, and database collaborate to support neonatal monitoring operations.
@@ -25,6 +27,7 @@ This design promotes scalability, separation of concerns, and maintainability by
 </p>
 
 ### 4.6.4. Software Architecture Components Diagrams
+
 6. Service Execution and Neonatal Monitoring
 
 The Component Diagram of the Service Execution and Neonatal Monitoring bounded context represents the internal structure and interaction between the main components responsible for neonatal monitoring within SIRAN. This diagram illustrates how the system processes clinical information, validates vital signs, detects anomalies, and manages alerts in real time.
