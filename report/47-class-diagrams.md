@@ -1,15 +1,11 @@
 ## 4.7. Software Object-Oriented Design
 
+La implementación de un diseño orientado a objetos será una pieza clave para el éxito del proyecto. Gracias a este enfoque, podremos organizar el sistema mediante módulos escalables, utilizando pilares como la herencia y el polimorfismo para garantizar que el código sea mantenible y fácil de reutilizar.
+
 ### 4.7.1. Class Diagrams
 
-6. Bounded Context Service Execution and Monitoring Neonatal
+El Diagrama de Clases proporciona una representación visual de la estructura lógica y estática del sistema SIRAN. En él se definen las clases fundamentales que componen el dominio, tales como Neonato, Medico, Padre, Alerta y RegistroSalud, detallando sus atributos, métodos y tipos de datos.
 
-The Class Diagram of the Service Execution and Neonatal Monitoring bounded context represents the internal domain model and the relationships between the main entities, services, and repositories that support the neonatal monitoring processes within SIRAN. This diagram defines the structural organization of the system and illustrates how data and responsibilities are distributed across the application.
+Este diagrama establece los vínculos de asociación, agregación y composición que permiten la comunicación entre los distintos módulos del software. Al aplicar principios de diseño orientado a objetos, aseguramos que la arquitectura sea lo suficientemente flexible para integrar nuevas reglas de validación clínica y escalar el sistema de monitoreo de manera eficiente, manteniendo una separación clara de responsabilidades entre las entidades del negocio.
 
-The model includes core entities such as Neonate, MonitoringSession, VitalSigns, Alert, Notification, Observation, and MedicalReport, which together manage the registration, analysis, and supervision of neonatal health information. In addition, service classes such as ValidationService, AnomalyDetectionEngine, AlertManager, and NotificationService encapsulate the business logic required for parameter validation, anomaly detection, alert generation, and communication management.
-
-The diagram also incorporates repository components responsible for data persistence, ensuring efficient storage and retrieval of monitoring information and alerts. This architecture promotes modularity, reusability, and maintainability by clearly separating domain entities, business logic, and persistence layers, enabling a scalable and reliable neonatal monitoring system.
-
-<p align="center">
-  <img src="assets/Class-diagram-6.png" width="700">
-</p>
+![Class Diagram](assets/class-diagram.png)
