@@ -10,9 +10,13 @@ La sesión de Design-Level Event Storming tuvo como propósito profundizar en el
 
 El Diagrama de Contexto proporciona una visión de alto nivel del sistema SIRAN, detallando sus interacciones con los usuarios externos (Padres y Neonatólogos) y otros sistemas de soporte o servicios externos necesarios para la operación.
 
+<img src="assets/software-architecture/context-diagram.png"> 
+
 ### 4.6.3. Software Architecture Container Diagrams
 
 Este diagrama ilustra la arquitectura técnica de alto nivel, mostrando los contenedores principales como la Aplicación Web, la API Backend y la Base de Datos, detallando cómo se comunican entre sí para soportar los distintos Bounded Contexts.
+
+<img src="assets/software-architecture/container-diagram.png"> 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
