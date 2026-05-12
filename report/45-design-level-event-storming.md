@@ -3,9 +3,9 @@
 ### 4.6.1. Design-Level Event Storming
 6. Bounded Context Service Execution and Monitoring Neonatal
 
-El bounded context Service Execution and Monitoring Neonatal constituye el núcleo operativo de SIRAN, encargado del monitoreo continuo y la supervisión del estado de salud del neonato. Su principal responsabilidad es procesar y analizar los datos clínicos registrados en tiempo real, validando los parámetros médicos y detectando posibles anomalías o situaciones de riesgo.
+The Service Execution and Neonatal Monitoring bounded context constitutes the operational core of SIRAN, responsible for the continuous monitoring and supervision of the neonate’s health condition. Its main responsibility is to process and analyze clinical data recorded in real time, validating medical parameters and detecting potential anomalies or risk situations.
 
-Este contexto gestiona la evaluación de signos vitales, la generación de alertas y el registro de eventos críticos, garantizando una respuesta rápida y confiable ante cualquier variación significativa en el estado del bebé. Asimismo, coordina la comunicación de información y resultados hacia otros contextos del sistema, facilitando la toma de decisiones oportunas por parte del personal médico y fortaleciendo el cuidado preventivo neonatal.
+This context manages vital signs evaluation, alert generation, and critical event registration, ensuring a fast and reliable response to any significant variation in the baby’s condition. Additionally, it coordinates the communication of information and results with other system contexts, facilitating timely decision-making by medical staff and strengthening preventive neonatal care.
 
 <p align="center">
   <img src="assets/Event-storming-6.png" width="500">
