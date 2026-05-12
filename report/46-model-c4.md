@@ -22,4 +22,6 @@ Este diagrama ilustra la arquitectura técnica de alto nivel, mostrando los cont
 
 En esta sección se detalla la estructura interna de los contenedores, especificando los componentes lógicos que gestionan los procesos de monitoreo, validación de signos vitales y el motor de alertas inteligentes de SIRAN.
 
-![Software Architecture Components Diagram](assets/software-architecture/components-diagram.png)
+Neonatal Health Profiles BC:
+
+![Software Architecture Components Diagram](assets/software-architecture/neonatal_health_profiles_component.png)
