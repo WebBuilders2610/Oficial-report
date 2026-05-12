@@ -30,5 +30,5 @@ Service Execution and Neonatal Monitoring BC:
 
 
 <p align="center">
-  <img src="assets/Component-diagram-6.png" width="700">
+  <img src="assets/software-architecture/service_execution_component.png" width="700">
 </p>
