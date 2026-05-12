@@ -5,10 +5,10 @@
 En esta sección se presentan los esquemas visuales de baja fidelidad (wireframes) del sistema SIRAN. Estos diseños tienen como propósito establecer la estructura de información, la jerarquía de los elementos críticos y el flujo de navegación entre los módulos principales, tales como el registro de datos clínicos, la gestión de alertas en tiempo real y el panel de seguimiento neonatal.
 
 * **Login y Register:** Interfaz de acceso y creación de cuenta, estructurada con campos de texto claros, jerarquía visual para las llamadas a la acción (CTA) y opciones de recuperación de credenciales.
-    ![Wireframe Web - Login & Register](assets/software-arquitecture/web-app/wireframe-login-register.png)
+    ![Wireframe Web - Login & Register](assets/software-architecture/web-app/wireframe-login-register.png)
 
 * **Dashboard Principal (Padres):** Vista general que prioriza los últimos signos vitales registrados (temperatura y oxígeno), estado de alerta actual del neonato y accesos rápidos a módulos de alimentación y reportes.
-    ![Wireframe Web - Dashboard Padres](assets/software-arquitecture/web-app/wireframe-dashboard-parents.png)
+    ![Wireframe Web - Dashboard Padres](assets/software-architecture/web-app/wireframe-dashboard-parents.png)
 
 * **Panel de Control (Médicos):** Listado de neonatos asignados con indicadores visuales de criticidad para priorizar la revisión de reportes y alertas.
     ![Wireframe Web - Dashboard Medico](assets/software-arquitecture/web-app/wireframe-dashboard-doctor.png)
