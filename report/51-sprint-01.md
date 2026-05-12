@@ -29,7 +29,7 @@ El Sprint 1 estuvo enfocado en implementar la identidad visual de la plataforma,
 | Time | 08:00 PM |
 | Location | Virtual (Discord) |
 | Prepared By | Montoya Torres, Alexander Gabriel |
-| Attendees (to planning meeting) | Montoya Torres, Alexander Gabriel / Padilla Merino, Mauricio Jared / Flores Rios, Juan Diego / Crispin Valdivia, Angel Gabriel / Sebastian [Apellido] / Jose Carlos [Apellido] |
+| Attendees (to planning meeting) | Montoya Torres, Alexander Gabriel / Padilla Merino, Mauricio Jared / Flores Rios, Juan Diego / Crispin Valdivia, Angel Gabriel |
 | Sprint 0 Review Summary | No aplica debido a que corresponde al primer Sprint del proyecto. |
 | Sprint 0 Retrospective Summary | No aplica debido a que corresponde al primer Sprint del proyecto. |
 | Sprint Goal & User Stories | |
